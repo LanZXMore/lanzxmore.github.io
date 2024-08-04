@@ -1,0 +1,357 @@
+
+#nav-right{
+    flex:1 1 auto;
+    justify-content: flex-end;
+    margin-left: auto;
+    display: flex;
+    flex-wrap:nowrap;
+}
+/* 菜单栏居中 */
+
+
+
+#page-header.nav-fixed #nav{
+  backdrop-filter:blur(10px);
+  background-color: rgba(255, 255, 255, 0.407)!important;
+  transition: box-shadow 0.3s ease-in-out;
+  
+}
+#page-header.nav-fixed #nav:hover{
+  
+  box-shadow: 0px 0px 15px #686969d8, 0px 0px 8px #292828;
+  
+}
+
+[data-theme="dark"] #page-header.nav-fixed #nav{
+  backdrop-filter:blur(10px);
+  background-color: rgba(0, 0, 0, 0.516)!important;
+  transition: box-shadow 0.3s ease-in-out;
+  
+}
+[data-theme="dark"] #page-header.nav-fixed #nav:hover{
+  
+  box-shadow: 0px 0px 15px #1b1b1bd8, 0px 0px 6px #1f1e1e;
+  
+}
+/* 导航栏毛玻璃 */
+ 
+
+
+#nav *::after{
+    background-color: transparent!important;
+}
+/* 去掉菜单栏的长条 */
+
+.nav-fixed #nav{
+    transform: translateY(58px)!important;
+    -webkit-transform: translateY(58px)!important;
+    -moz-transform: translateY(58px)!important;
+    -ms-transform: translateY(58px)!important;
+    -o-transform: translateY(58px)!important;
+}
+/* 顶栏常驻 */
+
+/* #nav .menus_items .menus_item .menus_item_child li a {
+    padding: 2px 16px;
+  }
+  #nav .menus_items .menus_item .menus_item_child li:hover a {
+    color: white !important;
+  }
+  
+  #nav .menus_items .menus_item .menus_item_child li {
+    margin: 6px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    display: inline-block;
+    margin: 0 3px;
+  }
+  #nav .menus_items .menus_item .menus_item_child:before {
+    top: -19px;
+  } */
+  #site-name,
+  .shuoshuo {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  #site-name {
+    padding: 0 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  
+  #blog_name #site-name i {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  #blog_name #site-name:hover .title {
+    opacity: 0;
+  }
+  
+  #blog_name #site-name:hover i {
+    opacity: 1;
+    transform: scale(1.02 );
+    color: white;
+  }
+
+#nav.show {
+    display: flex;
+    justify-content: center;
+}
+#nav .site-page {
+    padding-bottom: 14px;
+}
+#page-header.not-top-img #nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--icat-secondbg);
+}
+#nav-group {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 顶部栏宽度定义 */
+
+/* #nav .menus_items .menus_item .menus_item_child, #nav .menus_items .icat_menus_item .menus_item_child {
+    margin-top: 14px;
+    border: 1px solid var(--icat-secondbg);
+}
+#nav .menus_items .menus_item .menus_item_child li a, #nav .menus_items .icat_menus_item .menus_item_child li a {
+    padding: 8px 34px;
+    text-align: center;
+} */
+#travellings {
+    padding: 0 14px 0 0;
+}
+
+/* PC菜单栏美化 */
+
+
+#page:has(#icat_page) {
+    border: 0;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+  #web_bg ~ .page:has(#icat_page) {
+    background: var(--card-bg);
+  }
+  /* page背景调整 */
+  
+  .icat-content.icat-content-item.icatPage {
+    height: 19rem;
+    color: var(--icat-white);
+    overflow: hidden;
+    margin-top: 0;
+    border-radius: 12px;
+    border: var(--style-border-always);
+    box-shadow: var(--icat-shadow-border);
+  }
+  .icat-content-item .icat-card-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+  .icat-content-item .icat-content-item-tips {
+    opacity: .8;
+    font-size: .6rem;
+    margin-bottom: .5rem;
+  }
+  .icat-content-item .icat-card-content .icat-content-item-title {
+    margin-bottom: .5rem;
+  }
+  .icat-content-item .icat-content-item-title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .icat-content-item .icat-content-bottom {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .icat-content-item .icat-content-bottom .icat-tips {
+    font-weight: bold;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button {
+    height: 40px;
+    width: auto;
+    padding: 0 22px;
+    border-radius: 20px;
+    justify-content: center;
+    background: var(--icat-white);
+    color: var(--icat-black);
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transform: translateZ(0);
+    box-shadow: 0 8px 16px -4px var(--icat-black-op);
+  }
+  .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button i {
+    margin-right: 4px;
+    font-weight: bold;
+  }
+  #page:has(#icat_page) .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button:hover {
+    background: var(--icat-blue);
+    color: var(--icat-white);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .icat-content-item .icat-card-content {
+      padding: 1rem 1rem;
+    }
+    .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button {
+      width: 60px;
+    }
+    .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button i {
+      margin-right: -3px;
+    }
+    .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button-text {
+      display: none;
+    }
+  }
+  /* 响应式 */
+  
+  /* icat-page顶部样式 */
+
+
+  .layout{
+    width: 100%;
+    max-width:1400px;
+}
+/* 重新定义宽度 */
+
+.layout > div:first-child {
+    width: 100%;
+}
+#post {
+    width: 78%;
+}
+.aside-content {
+    max-width: 312px;
+    min-width: 300px;
+}
+.layout.hide-aside {
+    max-width: 1400px;
+}
+/* 定义是否侧边栏的宽度 */
+
+#recent-posts > .recent-post-item {
+    height: 19em;
+    border: var(--style-border);
+}
+#recent-posts > .recent-post-item >.recent-post-info {
+    padding: 0 56px;
+    width: 64%;
+}
+@media screen and (max-width: 678px) {
+    #recent-posts > .recent-post-item {
+        height: auto;
+    }
+    #recent-posts > .recent-post-item >.recent-post-info {
+        padding: 20px 20px 30px;
+        width: 100%;
+        text-align: center;
+    }
+}
+/* 主页文章列表图片宽度 */
+
+
+#footer {
+    background: var(--icat-footer-background);
+}
+  
+#footer #footer-wrap {
+    color: var(--font-color)
+}
+  
+#footer #footer-wrap a {
+    color: var(--font-color)
+}
+  
+/* 页脚透明 */
+
+
+[data-theme="light"] #aside-content > .card-widget.card-info {
+    background-image: url(https://s11.ax1x.com/2023/05/02/p9GWEin.jpg);
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: 100%;
+}
+[data-theme="dark"] #aside-content > .card-widget.card-info {
+    background-image: url(https://s11.ax1x.com/2023/05/02/p9GWVGq.jpg);
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: 100%;
+}
+
+/* 个人信息卡片背景图 */
+
+#aside-content .card-archives ul.card-archive-list, #aside-content .card-categories ul.card-category-list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+}
+#aside-content .card-archives ul.card-archive-list > .card-archive-list-item, #aside-content .card-categories ul.card-category-list > .card-category-list-item {
+    width: 48%;
+    margin: 3px 0;
+}
+#aside-content .card-archives ul.card-archive-list > .card-archive-list-item a, #aside-content .card-categories ul.card-category-list > .card-category-list-item a {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    padding: 3px 10px;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: var(--font-color);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    transition: all 0.4s;
+    border: 1px solid #cbcbcb;
+    border-radius: 6px;
+    -webkit-box-orient: vertical;
+}
+
+/* 侧边栏分类（标签）样式调整 */

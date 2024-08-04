@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Ali';
+    font-display: swap;
+    src: url('/myChanges/font/AlibabaHealthFont2.0CN-85B.ttf') format("truetype");
+  }
+
+.ma-shan-zheng-regular {
+    font-family: "Ma Shan Zheng", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  
