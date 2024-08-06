@@ -8,8 +8,6 @@
 }
 /* 菜单栏居中 */
 
-
-
 #page-header.nav-fixed #nav{
   backdrop-filter:blur(10px);
   background-color: rgba(255, 255, 255, 0.407)!important;
