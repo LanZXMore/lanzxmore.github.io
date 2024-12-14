@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>关于虚拟机</title>
+      <link href="/2024/12/13/About-VM/"/>
+      <url>/2024/12/13/About-VM/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="安装VMware"><a href="#安装VMware" class="headerlink" title="安装VMware"></a>安装VMware</h1><p>VMware是一款开源的虚拟机软件，可以运行各种操作系统，包括Windows、Linux、Mac OS等。</p><p>VMware官网：<a href="https://www.vmware.com/cn.html">https://www.vmware.com/cn.html</a></p><p>从VMware服务器上获取安装包：<a href="https://softwareupdate.vmware.com/cds/vmw-desktop/">https://softwareupdate.vmware.com/cds/vmw-desktop/</a></p><p><img src="https://image.lanzx.top/file/AgACAgUAAxkDAAMFZ10no_4IVKqS4XLOmjU0q3t4u_gAAkzAMRsB8-hWjHUqVq7719kBAAMCAAN5AAM2BA.png" alt="图片不见了" title="下载"></p><p><strong>在最后应当选择包含core路径：</strong></p><p><img src="https://image.lanzx.top/file/AgACAgUAAxkDAAMEZ10nDZq-5Lu16glhS5tPLJjF1V8AAkvAMRsB8-hWaZAmkPg6lLUBAAMCAAN4AAM2BA.png" alt="图片不见了" title="路径"></p><h1 id="下列镜像源可供选择："><a href="#下列镜像源可供选择：" class="headerlink" title="下列镜像源可供选择："></a>下列镜像源可供选择：</h1><h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><p><a href="https://www.xitongku.com/index.html">系统库</a></p><h2 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h2><p><a href="https://mirrors.163.com/centos/">网易云镜像</a></p><p><a href="https://mirrors.aliyun.com/centos/">阿里云镜像</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2024.12.1 更新日志</title>
       <link href="/2024/12/01/2024-12-1-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
       <url>/2024/12/01/2024-12-1-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
