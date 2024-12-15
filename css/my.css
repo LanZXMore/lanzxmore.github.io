@@ -32,6 +32,12 @@
   
 }
 /* 导航栏毛玻璃 */
+
+#page-header {
+
+  backdrop-filter:blur(10px);
+
+}
  
 
 #nav *::after{
@@ -231,7 +237,7 @@
 
   .layout{
     width: 100%;
-    max-width:1400px;
+    max-width:1200px; /* 解决页面宽度过大导致的溢出 */
 }
 /* 重新定义宽度 */
 
