@@ -179,13 +179,17 @@ function addStyles() {
 
 function isEnabled() {
     const scriptSrc = document.currentScript.src;
-    const urlParams = new URLSearchParams(scriptSrc.split('?')[1]);
-    const enabled = urlParams.get('enabled') !== 'false';  // 如果 'enabled' 为 'false' 则禁用脚本
+    const urlParams = new URLSearchParams(scriptSrc.split('?')[1] || '');
+    // 修正参数解析，正确处理 enabled 参数
+    const enabledParam = urlParams.get('enabled');
+    // 只有当 enabled 明确设置为 "false" 时才禁用
+    const enabled = enabledParam !== 'false';
+    
     if (!enabled) {
-        console.log("脚本被禁用");
-        return false;  // 如果禁用脚本，返回 false
+        console.log("灯笼脚本已禁用");
+        return false;
     }
-    return true;  // 如果启用脚本，返回 true
+    return true;
 }
 
 // 引入时调用
