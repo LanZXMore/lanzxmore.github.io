@@ -6,7 +6,7 @@
   <link href="https://blog.lanzx.top/atom.xml" rel="self"/>
   
   <link href="https://blog.lanzx.top/"/>
-  <updated>2024-12-15T07:11:28.079Z</updated>
+  <updated>2025-03-16T15:34:32.308Z</updated>
   <id>https://blog.lanzx.top/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>开发日志-2025/03/16</title>
+    <link href="https://blog.lanzx.top/2025/03/16/DevelopmentLog-2025-03-16/"/>
+    <id>https://blog.lanzx.top/2025/03/16/DevelopmentLog-2025-03-16/</id>
+    <published>2025-03-16T07:57:32.000Z</published>
+    <updated>2025-03-16T15:34:32.308Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="开发日志"><a href="#开发日志" class="headerlink" title="开发日志"></a>开发日志</h1><ul><li>新增:<ul><li>视频首页(宽度适配导致文章宽度显示错误)</li><li>修复灯笼显示错误并完善javascript引用</li><li>(bug)nav离奇消失</li></ul></li></ul><h2 id="视频首页"><a href="#视频首页" class="headerlink" title="视频首页"></a>视频首页</h2><p>新增video-background.js作为主程序</p><h2 id="灯笼修复"><a href="#灯笼修复" class="headerlink" title="灯笼修复"></a>灯笼修复</h2><p>修饰第四个灯笼位置</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.deng-box4</span> &#123; <span class="attribute">position</span>: fixed; <span class="attribute">top</span>: <span class="number">15px</span>; <span class="attribute">right</span>: <span class="number">20px</span>; &#125;</span><br></pre></td></tr></table></figure><p>修复引用逻辑</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> enabledParam = urlParams.<span class="title function_">get</span>(<span class="string">&#x27;enabled&#x27;</span>);</span><br><span class="line"><span class="comment">// 只有当 enabled 明确设置为 &quot;false&quot; 时才禁用</span></span><br><span class="line"><span class="keyword">const</span> enabled = enabledParam !== <span class="string">&#x27;false&#x27;</span>;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日志 开发" scheme="https://blog.lanzx.top/tags/%E6%97%A5%E5%BF%97-%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>关于虚拟机</title>
     <link href="https://blog.lanzx.top/2024/12/13/About-VM/"/>
     <id>https://blog.lanzx.top/2024/12/13/About-VM/</id>
     <published>2024-12-13T15:38:48.000Z</published>
-    <updated>2024-12-15T07:11:28.079Z</updated>
+    <updated>2025-03-16T15:29:25.375Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="关于VMware"><a href="#关于VMware" class="headerlink" title="关于VMware"></a>关于VMware</h1><p>VMware是一款开源的虚拟机软件，可以运行各种操作系统，包括Windows、Linux、Mac OS等。</p><h1 id="安装VMware"><a href="#安装VMware" class="headerlink" title="安装VMware"></a>安装VMware</h1><p>VMware官网：<a href="https://www.vmware.com/cn.html">https://www.vmware.com/cn.html</a></p><p>从VMware服务器上获取安装包：<a href="https://softwareupdate.vmware.com/cds/vmw-desktop/">https://softwareupdate.vmware.com/cds/vmw-desktop/</a></p><p><img src="https://image.lanzx.top/file/AgACAgUAAxkDAAMFZ10no_4IVKqS4XLOmjU0q3t4u_gAAkzAMRsB8-hWjHUqVq7719kBAAMCAAN5AAM2BA.png" alt="图片不见了" title="下载"></p><p><strong>在最后应当选择包含core路径：</strong></p><p><img src="https://image.lanzx.top/file/AgACAgUAAxkDAAMEZ10nDZq-5Lu16glhS5tPLJjF1V8AAkvAMRsB8-hWaZAmkPg6lLUBAAMCAAN4AAM2BA.png" alt="图片不见了" title="路径"></p><h1 id="下列镜像源可供选择："><a href="#下列镜像源可供选择：" class="headerlink" title="下列镜像源可供选择："></a>下列镜像源可供选择：</h1><h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><p><a href="https://www.xitongku.com/index.html">系统库</a></p><h2 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h2><p><a href="https://mirrors.163.com/centos/">网易云镜像</a></p><p><a href="https://mirrors.aliyun.com/centos/">阿里云镜像</a></p>]]></content>
     
@@ -34,11 +56,11 @@
   </entry>
   
   <entry>
-    <title>2024.12.1 更新日志</title>
+    <title>开发日志-2024/12/01</title>
     <link href="https://blog.lanzx.top/2024/12/01/2024-12-1-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
     <id>https://blog.lanzx.top/2024/12/01/2024-12-1-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</id>
     <published>2024-12-01T11:02:11.000Z</published>
-    <updated>2024-12-14T07:58:02.882Z</updated>
+    <updated>2025-03-16T15:30:28.726Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="2024-12-1-更新日志"><a href="#2024-12-1-更新日志" class="headerlink" title="2024.12.1 更新日志"></a>2024.12.1 更新日志</h1><ul><li>新增: <ul><li>网页缓存</li><li>wowjs 特效</li></ul></li></ul><h2 id="wowjs-特效"><a href="#wowjs-特效" class="headerlink" title="wowjs 特效"></a>wowjs 特效</h2><p>see <a href="https://www.npmjs.com/package/hexo-butterfly-wowjs">https://www.npmjs.com/package/hexo-butterfly-wowjs</a></p><p><strong>安装了hexo-butterfly-wowjs插件</strong></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-butterfly-wowjs --save</span><br></pre></td></tr></table></figure><p><strong>添加配置项在_config.butterfly.yml中</strong></p>]]></content>
     
@@ -50,6 +72,8 @@
     
     
     
+    
+    <category term="日志 开发" scheme="https://blog.lanzx.top/tags/%E6%97%A5%E5%BF%97-%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   

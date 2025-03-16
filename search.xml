@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>开发日志-2025/03/16</title>
+      <link href="/2025/03/16/DevelopmentLog-2025-03-16/"/>
+      <url>/2025/03/16/DevelopmentLog-2025-03-16/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="开发日志"><a href="#开发日志" class="headerlink" title="开发日志"></a>开发日志</h1><ul><li>新增:<ul><li>视频首页(宽度适配导致文章宽度显示错误)</li><li>修复灯笼显示错误并完善javascript引用</li><li>(bug)nav离奇消失</li></ul></li></ul><h2 id="视频首页"><a href="#视频首页" class="headerlink" title="视频首页"></a>视频首页</h2><p>新增video-background.js作为主程序</p><h2 id="灯笼修复"><a href="#灯笼修复" class="headerlink" title="灯笼修复"></a>灯笼修复</h2><p>修饰第四个灯笼位置</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.deng-box4</span> &#123; <span class="attribute">position</span>: fixed; <span class="attribute">top</span>: <span class="number">15px</span>; <span class="attribute">right</span>: <span class="number">20px</span>; &#125;</span><br></pre></td></tr></table></figure><p>修复引用逻辑</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> enabledParam = urlParams.<span class="title function_">get</span>(<span class="string">&#x27;enabled&#x27;</span>);</span><br><span class="line"><span class="comment">// 只有当 enabled 明确设置为 &quot;false&quot; 时才禁用</span></span><br><span class="line"><span class="keyword">const</span> enabled = enabledParam !== <span class="string">&#x27;false&#x27;</span>;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 日志 开发 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于虚拟机</title>
       <link href="/2024/12/13/About-VM/"/>
       <url>/2024/12/13/About-VM/</url>
@@ -17,13 +36,19 @@
     
     
     <entry>
-      <title>2024.12.1 更新日志</title>
+      <title>开发日志-2024/12/01</title>
       <link href="/2024/12/01/2024-12-1-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
       <url>/2024/12/01/2024-12-1-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="2024-12-1-更新日志"><a href="#2024-12-1-更新日志" class="headerlink" title="2024.12.1 更新日志"></a>2024.12.1 更新日志</h1><ul><li>新增: <ul><li>网页缓存</li><li>wowjs 特效</li></ul></li></ul><h2 id="wowjs-特效"><a href="#wowjs-特效" class="headerlink" title="wowjs 特效"></a>wowjs 特效</h2><p>see <a href="https://www.npmjs.com/package/hexo-butterfly-wowjs">https://www.npmjs.com/package/hexo-butterfly-wowjs</a></p><p><strong>安装了hexo-butterfly-wowjs插件</strong></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-butterfly-wowjs --save</span><br></pre></td></tr></table></figure><p><strong>添加配置项在_config.butterfly.yml中</strong></p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 日志 开发 </tag>
+            
+        </tags>
       
     </entry>
     

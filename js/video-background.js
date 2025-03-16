@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   // 获取配置参数
-  const videoPath = 'https://image.lanzx.top/file/BQACAgUAAxkDAAMGZ9Zhq6QbRnORInWgtYv9gWh0cDIAAjoUAALP4rBWNCxDh9cLTSc2BA.mp4'; // 替换为你的网络视频URL
+  const videoPath = 'https://image.lanzx.top/file/BQACAgUAAxkDAAMGZ9Zhq6QbRnORInWgtYv9gWh0cDIAAjoUAALP4rBWNCxDh9cLTSc2BA.mp4'; 
   
   // 设置循环播放变量，true表示循环播放，false表示不循环
   const enableLooping = false; // 在这里修改循环状态：true开启循环，false关闭循环
