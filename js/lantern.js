@@ -76,6 +76,7 @@ function addStyles() {
         .deng-box1 { position: fixed; top: 15px; left: 20px; }
         .deng-box2 { position: fixed; top: 12px; left: 130px; }
         .deng-box3 { position: fixed; top: 10px; right: 110px; }
+        .deng-box4 { position: fixed; top: 15px; right: 20px; } /* 添加第四个灯笼的位置 */
         .deng {
             position: relative;
             width: 120px;
