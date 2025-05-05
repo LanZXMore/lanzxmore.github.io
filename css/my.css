@@ -242,6 +242,7 @@
   .layout{
     width: 100%;
     max-width:1200px; /* 解决页面宽度过大导致的溢出 */
+    flex-direction: row; /* 恢复正常顺序，侧边栏在右侧 */
 }
 /* 重新定义宽度 */
 
@@ -250,10 +251,13 @@
 }
 #post {
     width: 78%;
+    margin-left: auto; /* 文章内容区域居中 */
+    margin-right: auto; /* 文章内容区域居中 */
 }
 .aside-content {
     max-width: 312px;
     min-width: 300px;
+    margin-left: 20px; /* 添加左侧边距，与文章区域分开 */
 }
 .layout.hide-aside {
     max-width: 1400px;
@@ -455,4 +459,47 @@ div#category {
 /* md网站下划线 */
 #article-container a:hover {
   text-decoration: none !important;
+}
+
+/* 文章内容布局修复 */
+#post {
+  margin: 0 auto;
+  max-width: 1200px; /* 可以根据需要调整最大宽度 */
+  padding: 0 20px;
+}
+
+.layout {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#content-inner {
+  max-width: 1200px; /* 与上面保持一致 */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 在较大屏幕上添加左侧空白 */
+@media screen and (min-width: 1400px) {
+  #post {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  
+  #content-inner {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* 确保移动设备上的正确显示 */
+@media screen and (max-width: 768px) {
+  #post, #content-inner {
+    width: 95%;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
 }
