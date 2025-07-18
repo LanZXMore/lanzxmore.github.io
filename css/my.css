@@ -49,6 +49,13 @@
 }
 /* 去掉菜单栏的长条 */
 
+#nav #site-name:hover, 
+#nav .menus_item:hover, 
+#nav #search-button:hover{
+    font-size:28px;
+}
+/* 导航栏菜单鼠标移入字体放大 */
+
 .nav-fixed #nav{
     transform: translateY(58px)!important;
     -webkit-transform: translateY(58px)!important;
@@ -56,7 +63,7 @@
     -ms-transform: translateY(58px)!important;
     -o-transform: translateY(58px)!important;
 }
-/* 顶栏常驻 */
+/* 顶栏常驻 - 修复在所有页面上的显示问题 */
 
 /* #nav .menus_items .menus_item .menus_item_child li a {
     padding: 2px 16px;
@@ -75,6 +82,8 @@
   #nav .menus_items .menus_item .menus_item_child:before {
     top: -19px;
   } */
+  /* 菜单栏子标签横向 */
+
   #site-name,
   .shuoshuo {
     white-space: nowrap;
