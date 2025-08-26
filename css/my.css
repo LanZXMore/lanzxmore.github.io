@@ -150,7 +150,7 @@
 /* PC菜单栏美化 */
 
 
-#page:has(#icat_page) {
+/* #page:has(#icat_page) {
     border: 0;
     box-shadow: none !important;
     padding: 0 !important;
@@ -158,7 +158,7 @@
   }
   #web_bg ~ .page:has(#icat_page) {
     background: var(--card-bg);
-  }
+  } */
   /* page背景调整 */
   
   .icat-content.icat-content-item.icatPage {

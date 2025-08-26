@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const isDown = scrollDirection(currentTop)
       if (currentTop > 56) {
         if (isDown) {
-          if ($header.classList.contains('nav-visible')) $header.classList.remove('nav-visible')
+          // if ($header.classList.contains('nav-visible')) $header.classList.remove('nav-visible')
           if (isChatBtn && isChatShow === true) {
             window.chatBtn.hide()
             isChatShow = false
